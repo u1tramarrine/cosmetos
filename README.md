@@ -25,7 +25,7 @@
 | location | string | Где стоит ящик, например "Кухня, верхняя полка" |
 | description | string | Заметки: цвет, размер, материал |
 | photo_url | string | Путь к фото ящика |
-| category_id | integer | Ссылка на Categories |
+| category_id | UUID | Ссылка на Categories |
 
 ---
 
@@ -41,8 +41,8 @@
 | quantity | integer | Количество единиц |
 | price | decimal(6,2) | Стоимость предмета |
 | photo_url | string | Путь к фото предмета |
-| box_id | integer | Ссылка на Boxes |
-| category_id | integer | Ссылка на Categories |
+| box_id | UUID | Ссылка на Boxes |
+| category_id | UUID | Ссылка на Categories |
 | notes | string | Доп. информация, например "в пакете", "нижний слой" |
 | created_at | date | Дата добавления записи |
 
